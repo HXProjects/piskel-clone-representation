@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link 
+        rel="stylesheet" href="./styles.css" type="text/css">
+    <link  
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    <title>piskel-clone</title>
+  </head>
+  <body>
+    <header class="header">
+      <button data-component = "menu-button" class="header-button">
+        <span class="button_header-menu-icon"></span>         
+      </button>
+      
+      <h1>PISKEL-CLONE</h1>
+      <button data-component = "menu-button" class="header-button">
+        <span class="button_header-menu-icon"></span>         
+      </button>
+    </header>
+    <main class="main"> 
+      <aside class="section-tools">  
+        <section data-component = "tools-section" class="section_tools-panel">
+        <div data-component = "pixel-size-buttons" class="section_tools-panel_size-panel" >
+          Size:
+          <button title="pen size [alt+1]" data-component = "button_size1" class="section_tools-button-small current-size">
+          1x
+          </button>
+          <button title="pen size [alt+2]" data-component = "button_size2" class="section_tools-button-small">
+            2x
+          </button>
+          <button title="pen size [alt+3]" data-component = "button_size3" class="section_tools-button-small">
+            3x
+          </button>
+          <button title="pen size [alt+4]" data-component = "button_size4" class="section_tools-button-small">
+            4x
+          </button>
+        </div>
+          
+        <button title="pen tool [p]" data-component = "pencil-button" class="section_tools-button selected-tool">
+          <span class="button_pencil-icon"></span>         
+        </button>
+        <button title="line tool [l]" data-component = "line-button" class="section_tools-button">
+          <span class="button_line-icon"></span>         
+        </button>         
+        <button title="paint bucket tool" data-component = "paint-bucket-button" class="section_tools-button">
+          <span class="button_bucket-icon"></span>         
+        </button>
+        <button title="erase tool [e]" data-component = "erase-button" class="section_tools-button">
+          <span class="button_erase-icon"></span> 
+        </button>
+        
+        <input data-component="color-picker" type="color" name="color" class = "section_tools-color-picker">
+        
+        </section>
+        <section data-component ="aside-settings-menu" class="aside_settings-menu">
+          Canvas size:
+          <select data-component ="aside-select-menu">
+            <option selected value='160'>32x32</option>
+            <option value='320'>64x64</option>
+            <option value='640'>128x128</option>            
+          </select> 
+        </section> 
+    </aside>
+      
+    <section data-component = "frame-section" class="section_frames-list">
+          </section>
+    <section data-component = "main-frame-section" class="section_main-frame">
+    </section>
+      <aside data-component = "animation-section" class="section_animation">
+        <div data-component="state-info"></div>
+        <div data-component="statistic" class = "statistic">[ - ; - ]</div>
+      </aside>
+    </main>
+    <script src="./js/app.bundle.js"></script>
+  </body>
+</html>

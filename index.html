@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link 
+        rel="stylesheet" href="./landing-styles.css" type="text/css">
+    <link  
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    <title>piskel-clone</title>
+  </head>
+  <body>
+    <header class="header">
+      <button data-component = "menu-button" class="header-button">
+        <span class="button_header-menu-icon"></span>         
+      </button>
+      
+      <h1>PISKEL-CLONE</h1>
+      <button data-component = "menu-button" class="header-button">
+        <span class="button_header-menu-icon"></span>         
+      </button>
+    </header>
+    <main class="main"> 
+      <section class="landing-info-section">
+          <h2>
+            Welcome! Välkommen!
+            Piskel-clone is a free online editor, cloned from famous piskel-app 
+            for animated sprites & pixel art
+            </h2>
+            <h3>
+              Create animations in your browser.            
+            </h3>
+            <h3>
+              Try an example, simply create a new sprite. 
+            </h3>
+            <button class = 'section_start-button' data-component = "start-button" >
+             New Sprite
+              </button>
+           
+      </section>      
+        <section class="landing-presentation-section">
+        </section>
+         
+    
+    </main>
+    <script>
+      const gotoIndex = () => {
+        window.open('app.html', '_self');
+      };
+      const startSpriteButton = () => {
+        const button = document.querySelector('[data-component="start-button"]');
+        button.addEventListener('click', gotoIndex);
+      };
+      startSpriteButton();
+    </script>
+  </body>
+</html>
